@@ -1,8 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><title>HOME</title></head>
+<head>
+    <title>HOME</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        .btn-register {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #4f46e5;
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-register:hover {
+            background-color: #4338ca;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+        }
+    </style>
+</head>
 <body>
-<h2>WELCOME</h2>
-<a href="register.html">REGISTER AS STUDENT</a>
+<div class="card">
+    <h2>WELCOME</h2>
+    <a href="register.html" class="btn-register">REGISTER AS STUDENT</a>
+</div>
 </body>
 </html>
